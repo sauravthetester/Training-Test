@@ -44,14 +44,9 @@ public class TrainingBase {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized");
 		options.addArguments("--remote-allow-origins=*");
-//		WebDriverManager.chromedriver().setup();
-//		driver = new ChromeDriver(options);
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver(options);
 		
-		try {
-			driver = new RemoteWebDriver(new URL(prop.getProperty("grid")), options);
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		}
 		
 		driver.get(prop.getProperty("url"));
 		
