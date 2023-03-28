@@ -40,6 +40,7 @@ public class TrainingTestCases {
 		System.out.println("productExists = "+productExists);
 		
 		sAssert.assertAll(); // Assertion check is taken care
+		System.out.println("Added a new line");
 	}	
 
 	
