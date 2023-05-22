@@ -18,7 +18,7 @@ public class SampleTestCases {
 		System.out.println("This is method2");
 	}
 	
-	@Test(priority=3)
+	@Test(priority=7)
 	public void method3()
 	{
 		System.out.println("This is method3");
